@@ -1,0 +1,200 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+    ===========
+    global
+    ===========
+*/
+
+html, body {
+    background-color: #FFF7ED;
+    font-family: "Inter", sans-serif;
+    height: 100%;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+img {
+    object-fit: cover;
+}
+
+.link-button:hover {
+    transform: translate(1px, 1px);
+}
+
+header,
+nav,
+.home-container {
+    display: flex;
+}
+
+/*
+    ==========
+    header
+    ==========
+*/
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    height: 10vh;
+}
+
+header .site-logo {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header a,
+.link-button {
+    transition: all 0.4s ease-in-out;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.link-bottom:hover {
+    transform: translate(1px, 1px);
+}
+
+
+nav {
+    gap: 1em;
+}
+
+nav a {
+    font-size: 0.9rem;
+    color: black;
+}
+
+/*
+    =========
+    footer
+    =========
+*/
+
+footer {
+    width: 100%;
+    background: #252525;
+    padding: 1em;
+    color: rgb(122, 118, 118);
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+
+}
+
+/*
+    =========
+    home
+    =========
+*/
+
+.home-container {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.634), rgba(0, 0, 0, 0.46)), url("./home-bg.jpeg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 350px;
+    color: white;
+    padding: 8em 1.5em;
+    flex-direction: column;
+    gap: 2em;
+    height: 85vh;
+}
+
+.home-container h1 {
+    font-size: 2.7rem;
+    line-height: 52px;
+}
+
+.home-container p {
+    font-size: 1.1rem;
+    line-height: 42px;
+}
+
+.vans-link-btn {
+    background: orange;
+    padding: 0.8em;
+    font-size: 0.9rem;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+}
+
+/*
+    ==========
+    About
+    ==========
+*/
+
+.about-page-container,
+.about-page-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.about-hero-image {
+    height: 210px;
+    width: 100%;
+}
+
+.about-page-content {
+    padding: 1em 2em;
+}
+
+.about-page-cta {
+    padding: 0 2em;
+    height: 130px;
+}
+
+.about-page-content h1{
+    font-size: 1.5rem;
+}
+
+.about-page-content p {
+    font-size: 0.85rem;
+}
+
+.about-page-cta-content {
+    background: #FFCC8D;
+    border-radius: 2px;
+    padding: 1em;
+    height: 100%;
+}
+.about-page-cta h2 {
+    font-size: 1.2rem;
+}
+
+.about-page-cta-content .link-button {
+    width: 130px;
+    display: block;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    background: #000000;
+    font-size: 0.8rem;
+    padding: 1em 0.5em;
+    margin-top: 1em;
+}
+
+
